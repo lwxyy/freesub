@@ -46,7 +46,7 @@
     {
       "type": "vless",
       "tag": "🇱🇹 立陶宛 (Lithuania) 06 - xiaohe",
-      "server": "84.32.215.5",
+      "server": "84.32.215.94",
       "server_port": 443,
       "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3",
       "flow": "xtls-rprx-vision",
@@ -55,7 +55,7 @@
         "server_name": "lt.aether-runet.top",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,

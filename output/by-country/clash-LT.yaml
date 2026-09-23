@@ -40,7 +40,7 @@ proxies:
   cipher: aes-256-cfb
   password: 37Z4TFCYhfxcpc9Q
 - name: 🇱🇹 立陶宛 (Lithuania) 06 - xiaohe
-  server: 84.32.215.5
+  server: 84.32.215.94
   port: 443
   udp: true
   type: vless
@@ -51,7 +51,7 @@ proxies:
     public-key: vrcsm8L_tY7sNbnCEdLCEjOthh_w9bdWS3wFPgsIomk
     short-id: 4fa44664f6a566d3
   servername: lt.aether-runet.top
-  client-fingerprint: random
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
