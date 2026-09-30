@@ -5,6 +5,36 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 爱尔兰 (Ireland) 01 - xiaohe
+  server: 104.21.90.210
+  port: 443
+  udp: true
+  type: vless
+  uuid: 767b6340-96dc-4aa0-8013-a8af7513d920
+  tls: true
+  servername: c7dabe95.proxy-978.pages.dev
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: c7dabe95.proxy-978.pages.dev
+- name: 🇮🇪 爱尔兰 (Ireland) 02 - xiaohe
+  server: 188.114.97.8
+  port: 443
+  udp: true
+  type: vless
+  uuid: eb24c3b4-7936-45e2-a253-e54fd1955a7f
+  tls: true
+  servername: c0yr9j09y2l9g0td8wa5.2whbrirhjgslm43zjcqei.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vl/6NGHNFKsvK41KeQo?ed=2560
+    headers:
+      Host: c0yr9j09y2l9g0td8wa5.2whbrirhjgslm43zjcqei.workers.dev
+- name: 🇮🇪 爱尔兰 (Ireland) 03 - xiaohe
   server: 3.9.135.156
   port: 51847
   udp: true
@@ -17,17 +47,38 @@ proxies:
     short-id: 0eec442e7b34d2f2
   servername: www.tesla.com
   client-fingerprint: chrome
+- name: 🇮🇪 爱尔兰 (Ireland) 04 - xiaohe
+  server: 172.67.182.89
+  port: 443
+  udp: true
+  type: vless
+  uuid: 56b52604-0074-44b9-8f7d-2826943a54d7
+  tls: true
+  servername: yellow-truth-67eb.frgferefg234e4343.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiamd3OFpKWlluUFlMM25IUyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==
+    headers:
+      Host: yellow-truth-67eb.frgferefg234e4343.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇪 爱尔兰 (Ireland) 01 - xiaohe
+  - 🇮🇪 爱尔兰 (Ireland) 02 - xiaohe
+  - 🇮🇪 爱尔兰 (Ireland) 03 - xiaohe
+  - 🇮🇪 爱尔兰 (Ireland) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇮🇪 爱尔兰 (Ireland) 01 - xiaohe
+  - 🇮🇪 爱尔兰 (Ireland) 02 - xiaohe
+  - 🇮🇪 爱尔兰 (Ireland) 03 - xiaohe
+  - 🇮🇪 爱尔兰 (Ireland) 04 - xiaohe
 rules:
 - MATCH,PROXIES

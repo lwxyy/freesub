@@ -4,14 +4,14 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
-      "server": "199.232.78.170",
+      "server": "www.speedtest.net",
       "server_port": 443,
-      "password": "mitivpn",
+      "uuid": "7fc7f295-b80e-4235-bb17-61e3ddc0744a",
       "tls": {
         "enabled": true,
-        "server_name": "ssl.fastly.com",
+        "server_name": "4zgccbcb10pqyibnwmm4nvznj4.royaehman5.workers.dev",
         "insecure": false,
         "alpn": [
           "http/1.1"
@@ -23,9 +23,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "@mehrosabiran",
+        "path": "/vl/dirxIBhljtrTSM76Q?ed=2560",
         "headers": {
-          "Host": "mitivpn---de--s---mitivpn-11.global.ssl.fastly.net"
+          "Host": "4zgccbcb10pqyibnwmm4nvznj4.royaehman5.workers.dev"
         }
       }
     },
